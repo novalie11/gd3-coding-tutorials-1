@@ -1,34 +1,92 @@
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "ABCRepro-Medium", Helvetica, Arial, sans-serif;
+  /* background: rgb(55, 160, 201); */
+  background: url(../images/P1300727.png) no-repeat center;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
 }
+
+.header {
+  /* padding: 50px; */
+  margin-top: 111px;
+  margin-right: 20px;
+  text-align: right;
+  /* background: rgb(255, 255, 255); */
+  font-size: 28pt;
+  font-family: FTF Indonesiana Go Graffitiana;
+}
+
+/* .header:hover {
+  /* padding: 50px; */
+  text-align: center;
+  background: rgb(53, 227, 30);
+  font-size: 128pt;
+  color: rgb(255, 255, 255);
+} */
 
 .main {
   padding: 10px;
 }
 
 .list {
+  margin-top: 125px;
+  padding-left: 300px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(5, 5fr);
+  grid-column-gap: 5px;
+  /* list-style-image: url(images/bullet.png); */
+  /* line-height: 3em; */
+  background: #000000;
 }
 
 .list__item {
-  border-bottom: 1px solid black;
-  padding: 5px 0;
+  border-bottom: 1px dashed rgb(0, 0, 0);
+  /* border: 1px dotted blue; */
+  padding: 11px;
 }
 
 .list__item__header {
   display: flex;
-  gap: 5px;
   align-items: baseline;
   cursor: pointer;
+  transition: background-color 2s;
+}
+
+.list__item__header:hover {
+  /* background-color: rgb(92, 244, 75); */
+  text-align: left;
+  font-size: 12pt;
+  background-color: white;
 }
 
 .list__item__artist {
-  font-size: 10px;
-  white-space: nowrap;
+  font-size: 10pt;
+  white-space: pre-wrap;
+  /* box-shadow: 10px 2px #000000; */
 }
 
 .list__item__body {
   display: none;
+  font-size: 8px;
+}
+
+.list__item__body.show {
+  display: block;
+  font-size: 10pt;
+}
+
+button.clicked {
+  color: pink;
+  font-size: 20px;
+  background-color: greenyellow;
+  border-color: #000000;
+}
+
+.list__item.clicked {
+  color: blueviolet;
 }

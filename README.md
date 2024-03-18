@@ -52,6 +52,15 @@ Modify the **CSS and JS files** in this repo in order to:
 
 1. Add a hover effect of your choice on all the `.list__item__header` elements.
 2. Add a click event on each `.list__item__header` element that toggles the `.list__item__body` element right next to it and closes all other `.list__item__body` element.
+
+/* Loop throug the list items_header. 
+Add click even to each. 
+Toggle list body element next to it. 
+Get the listitembody next to it. 
+5. Show/Toggle it on click
+*/
+
+
 3. Replace the content of each `.list__item__artist` element by only the date of birth of the artist.
 
 You can find a correction of the exercice on the `correction` branch [here](https://github.com/quentin-f451/gd3-coding-tutorials-1/tree/correction) and the final result online [here](https://gd3-coding-tutorials-1.netlify.app/).
